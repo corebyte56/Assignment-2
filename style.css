@@ -175,3 +175,93 @@ nav ul {
   background-color: rgba(0, 255, 136, 0.12);
   box-shadow: 0 0 14px rgba(0, 255, 136, 0.6);
 }
+
+
+@media screen and (max-width: 640px) {
+
+  nav h1 {
+    font-size: 1.5rem;
+    margin-left: -70px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    gap: 26px;
+    padding: 20px;
+  }
+
+  nav ul, nav .btn {
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+    margin-right: -60PX;
+  }
+
+  #banner {
+    height: auto;
+    padding: 60px 0;
+    background-position: center;
+  }
+
+  .banner-container {
+    height: auto;
+    gap: 30px;
+    padding: 0 16px;
+  }
+
+
+  .banner-img {
+    margin: 0;
+    width: 220px;
+    height: 220px;
+  }
+
+  .banner-img img {
+    max-width: 100%;
+  }
+
+  .banner-img .hero-circle {
+    width: 220px;
+  }
+
+  .banner-img .microphone {
+    width: 80px;
+  }
+
+  .new {
+    width: 60px;
+    bottom: 90%;
+    left: 85%;
+  }
+
+
+  .banner-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner-content p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+
+  .banner-btn {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .banner-btn .btn,
+  .banner-btn .btn2 {
+    width: 100%;
+    max-width: 260px;
+    justify-content: center;
+  }
+
+  .banner-btn img {
+    width: 18px;
+  }
+}
