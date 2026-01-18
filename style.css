@@ -421,5 +421,50 @@ nav ul {
     font-size: 0.9rem;
   }
 
+  #why {
+    padding-top: 70px;
+  }
+
+  .why-container {
+    width: 100%;
+    padding: 0 16px;
+    gap: 30px;
+  }
+
+  .why-text h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .why-info-card {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+
+  /* reset all custom grid spans */
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .why-card {
+    border-radius: 24px;
+    padding: 24px;
+  }
+
+  .why-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .why-card p {
+    font-size: 0.95rem;
+    line-height: 26px;
+  }
+
 
 }
