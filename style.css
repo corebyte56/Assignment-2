@@ -228,6 +228,76 @@ nav ul {
 }
 
 
+/* why section */
+
+#why {
+  padding-top: 120px;
+  background-color: #230E3D;
+}
+
+.why-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: min(1200px, 100%); 
+  margin: 0 auto;
+}
+
+.why-info-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 20px;
+}
+
+.card1 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+
+.card2 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.card3 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.card4 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.card5 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.why-card {
+  padding: 30px;
+  background-color: #351165;
+  border-radius: 40px;
+  text-align: left;
+  transition:transform 0.35s ease,box-shadow 0.35s ease,background-color 0.35s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-10px);
+  background-color: #3f1a78;
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.45),
+    0 0 30px rgba(140, 80, 255, 0.35);
+}
+
+.why-card h3 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
 @media screen and (max-width: 640px) {
 
   nav h1 {
