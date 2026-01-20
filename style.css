@@ -16,6 +16,10 @@ a {
   color: #FFFF;
 }
 
+a:hover{
+  color: #00FF88;
+}
+
 li {
   list-style: none;
 }
@@ -119,34 +123,43 @@ nav ul {
 
 .banner-img {
   position: relative;
+  width: 320px;
+  height: 320px;
 }
 
-
 .hero-circle {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mic-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-
 .microphone {
+  width: 110px;
   animation: micFloat 3.5s ease-in-out infinite;
-  will-change: transform;
-  animation: micFloat 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
 
+
 @keyframes micFloat {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-14px); }
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
   100% { transform: translateY(0); }
 }
 
+
 .new {
   position: absolute;
-  bottom: 100%;
-  left: 100%;
-  transform: translate(50%, -50%);
+  top: 0;
+  right: 0;
+  transform: translate(-25%, -25%);
+  width: 100px;
+  z-index: 5;
 }
 
 .banner-content {
@@ -489,23 +502,18 @@ footer {
 
 
   .banner-img {
-    width: 260px;
-    height: 260px;
-    margin: 0 auto;
-  }
-
-  .hero-circle {
     width: 240px;
+    height: 240px;
   }
 
   .microphone {
-    width: 90px;     /* 🔥 circle এর ভেতরে perfect */
+    width: 85px;
   }
 
   .new {
-    width: 50px;
-    top: 0;
-    right: 0;
+    width: 65px;
+    top: 20px;
+    right: 0px;
   }
 
   .banner-content h1 {
