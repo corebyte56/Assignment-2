@@ -119,14 +119,27 @@ nav ul {
 
 .banner-img {
   position: relative;
-  margin: 150px 600px;
 }
 
-.banner-img .hero-circle, .banner-img .microphone {
+
+.hero-circle {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+
+.microphone {
+  animation: micFloat 3.5s ease-in-out infinite;
+  will-change: transform;
+  animation: micFloat 3.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes micFloat {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-14px); }
+  100% { transform: translateY(0); }
 }
 
 .new {
@@ -476,29 +489,24 @@ footer {
 
 
   .banner-img {
-    margin: 0;
-    width: 220px;
-    height: 220px;
+    width: 260px;
+    height: 260px;
+    margin: 0 auto;
   }
 
-  .banner-img img {
-    max-width: 100%;
+  .hero-circle {
+    width: 240px;
   }
 
-  .banner-img .hero-circle {
-    width: 220px;
-  }
-
-  .banner-img .microphone {
-    width: 80px;
+  .microphone {
+    width: 90px;     /* 🔥 circle এর ভেতরে perfect */
   }
 
   .new {
-    width: 60px;
-    bottom: 90%;
-    left: 85%;
+    width: 50px;
+    top: 0;
+    right: 0;
   }
-
 
   .banner-content h1 {
     font-size: 1.8rem;
